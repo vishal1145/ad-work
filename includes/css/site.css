@@ -1,0 +1,290 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10.5pt;
+}
+
+a{
+	color: #0e2e7d;
+	text-decoration: none;
+}
+a:hover{
+	color: #0e2e7d;
+	text-decoration: underline;
+}
+
+#content{
+	width: 975px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table{
+	width: 100%;
+}
+
+.tabtable th{
+	width: 25%;
+	text-align: right;
+}
+table th{
+	color: #0e2e7d;
+}
+th,td{
+	padding: 0.2em 0.5em;
+}
+tr:nth-child(even){
+	background-color: #dddddd;
+}
+
+/**********************************************************
+ * 						  HEADER
+ **********************************************************/
+#header{
+}
+
+#header #logo{
+	float: left;
+	width: 975px;
+	height: 150px;
+	background: url(../images/logo.jpg) no-repeat center center #c5cfff;
+}
+
+#header #searchform{
+	float: left;
+	width: 400px;
+	background-color: #c5cfff;
+	padding: 0.4em 0em;	
+}
+#header #searchform label{
+	display: none;
+}
+#header #searchform input[type="text"]{
+	float: left;
+	display: block;
+	
+	width: 160px;
+	height: 16px;
+	font-size: 14px;
+	padding: 2px;
+	
+	border-top: 1px solid #8197ff;
+	border-left: 1px solid #8197ff;
+	border-bottom: 1px solid #8197ff;
+	border-right: 0px solid #8197ff;	
+}
+#header #searchform input[type="submit"]{
+	float: left;
+	display: block;
+	width: 22px;
+	height: 22px;
+	background: url(../images/icons/16x16/search.png) no-repeat 2px 2px;	
+	border: 1px solid #8197ff;	
+	margin-right: 10px;
+}
+#header #searchform input[type="submit"]:hover{
+	background-color: #8197ff;
+}
+
+#header #menu{
+}
+
+#header #menu ul{
+	margin: 0px;
+	padding: 0px;
+	width: 575px;
+	float: left;
+	list-style-type: none;
+	background-color: #c5cfff;
+}
+
+#header #menu ul li{
+	display: inline;
+}
+
+#header #menu ul li a{
+	display: block;
+	float: left;
+	padding: 0.4em 1em;
+	height: 22px;
+/*	border-right: 1px solid #c5cfff; */
+	color: #0e2e7d;
+	text-decoration: none;
+}
+#header #menu ul li a:hover{
+	background-color: #0e2e7d;
+	color: #c5cfff;
+}
+
+#header #loggedinline{
+	margin: 0px;
+	padding: 3px 5px 0px 0px;
+	text-align: right;
+	color: #0e2e7d;
+}
+
+#header #loggedinline a{
+	color: #0e2e7d;
+	text-decoration: underline;
+}
+
+#header #loggedinline a:hover{
+	color: #0e2e7d;
+	text-decoration: none;
+}
+
+/**********************************************************
+ * 						   BODY
+ **********************************************************/
+#content #body,
+#content #body-nomenu{
+	padding: 1em 0.5em;
+}
+#content #body{
+	background-color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6{
+	color: #0e2e7d;
+	margin: 0.1em 0px 0.2em 0px;
+}
+
+.clearfix{
+	clear: both;
+	margin: 0px;
+	padding: 0px;
+	font-size: 0px;
+}
+
+/**********************************************************
+ * 						FOOTER
+ **********************************************************/
+#footer{
+	float: left;
+	width: 100%;
+	background-color: #c5cfff;
+} 
+ 
+#footer #uoalogo,
+#footer #calunitlogo{
+	float: left;
+	width: 125px;
+	height: 60px;
+}	
+ 
+#footer #uoalogo{
+	background: url(../images/uoa.png) no-repeat center center;	
+}
+
+#footer #copyright{
+	float: left;
+	width: 725px;
+	padding-top: 5px;
+}
+
+#footer #copyright p{
+	font-size: 8pt;
+	text-align: center;
+	margin: 0px;
+	color: #0e2e7d;
+}
+
+#footer #calunitlogo{
+	background: url(../images/cal_unit.png) no-repeat center center;	
+}
+
+#footer a{
+	color: #0e2e7d;
+	text-decoration: underline;
+}
+#footer a:hover{
+	text-decoration: none;
+}
+
+
+/**********************************************************
+ *                    LOGIN FORM
+ **********************************************************/
+#formcontainer{
+	width: 50%;
+	margin: 250px auto 0px auto;
+}
+
+#loginform{
+	width: 100%;
+	float: left;
+	background-color: #c5cfff;
+	border: 1px solid #8197ff;
+	padding: 25px 0px;
+	margin: 0px auto 300px auto;
+}
+
+#loginform div.label{
+	float: left;
+	width: 40%;
+	text-align: right;
+}
+#loginform div.label label{
+	padding-right: 0.5em;
+	margin: 2px 0px 2px 0px;
+	line-height: 24px;
+	color: #0e2e7d;
+}
+
+#loginform div.element{
+	float: left;
+	width: 60%;
+}
+#loginform div.element input{
+	margin: 2px 0px 2px 0px;
+}
+
+.error-login{
+	background: url(../images/error-icon.png) no-repeat 3px center;
+	padding: 3px 3px 3px 22px;
+	border: 1px solid #cc0000;
+	color: #cc0000;
+	font-weight: bold;
+}
+
+#loginform input[type="text"],
+#loginform input[type="password"]{
+	width: 200px;
+	border: 1px solid #8197ff;
+	color: #0e2e7d;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:10.5pt;
+	padding: 0.2em;
+} 
+ 
+/**********************************************************
+ *                    LARGE BUTTONS
+ **********************************************************/ 
+.large_button{
+	display: block;
+	float: left;
+	padding: 5px;
+	margin: 10px;
+	width: 120px;
+	height: 80px;
+	border: 1px solid #8197ff;
+	background-color: #c5cfff;
+	background-repeat: no-repeat;
+	background-position: center 5px;
+	text-align: center;
+}
+.large_button:hover{
+	background-color: #0e2e7d;
+	color: #c5cfff;
+	text-decoration: none;
+}
+.large_button span{
+	display: block;
+	margin-top: 64px;
+	padding: 0px 5px;
+}
+#namesearch{
+	background-image: url(../images/icons/64x64/searchbydirectoryname.png);
+}
+#usernamesearch{
+	background-image: url(../images/icons/64x64/searchbyusername.png);
+}
